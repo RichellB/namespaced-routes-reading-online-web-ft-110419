@@ -7,8 +7,8 @@ Rails.application.routes.draw do
 
   
   scope '/admin', module: 'admin' do
-  resources :stats, only: [:index]
-end
+    resources :stats, only: [:index]
+  end
 
   root 'posts#index'
 end
